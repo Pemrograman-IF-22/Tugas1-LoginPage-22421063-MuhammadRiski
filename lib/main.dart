@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:login/login.dart';
 
 void main (){
-  runApp(MyApp()) ;
+  runApp(const MyApp()) ;
 }
 
 class MyApp extends StatelessWidget {
@@ -9,14 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Login der',
-      home: Scaffold(
-        appBar: AppBar(
-        title: Text('Login'),
-        centerTitle: true,
-      ),
-      )
+      home: LoginPage()
+
     );
   }
 }
